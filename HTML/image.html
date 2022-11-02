@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--절대 경로-->
+    <h1>절대경로</h1>
+    <img src="C:\WORK\HTMLCSSworkSpace\moon.jpg" height = "200" width="200" alt="밤하늘"/>
+    <img src="C:\WORK\HTMLCSSworkSpace\images\dog.jpg"height = "200" width="200" />
+
+    <!--상대 경로-->
+    <h1>상대경로</h1>
+    <img src = "moon.jpg" height = "200" width="200" alt="밤하늘" />
+    <img src = "images\dog.jpg" height = "200" width="200"/>
+    <!--상위-->
+    <img src = "..\dog.jpg" height = "200" width="200" />
+    <br>
+
+    <!-- url 사용하기 -->
+    <h1>url 사용하기</h1>
+    <img src = "https://cdn.pixabay.com/photo/2019/08/01/12/36/illustration-4377408_960_720.png" height = "200" width="200" >
+    <br>
+    <img src="dog.jpg" alt="강아지" usemap="#dogsound" >
+    <map name="dogsound" >
+        <area shape="rect" coords="207,574,5000,509" href="http://www.naver.com" target="_blank" >
+    </map>
+    <br><br>
+
+    <!-- 하이퍼링크 -->
+    <!-- <a href="파일위치(상대,절대),url">화면에 나타나는 부분</a> -->
+    <a href="tags.html" target = "_self">로또1등 당첨</tags></a>
+    <br>
+    <a href="tags.html" target = "_black">로또2등 당첨</tags></a>   <!-- _black 새창뛰우기-->
+    <br>
+    <a href="http://www.naver.com" ><img src="C:\WORK\HTMLCSSworkSpace\images\naver.jpg" height = "70" width="250"></a>
+
+    <!-- 한페이지 내에서 문서 이동 -->
+
+    <a href="#content1">한줄평</a>     <!--위치로 이동-->
+    <a href="#content2">반품환불</a>
+    <a href="#content3">도서정보</a>
+
+    <a id="content1">한줄평 위치</a>    <!--이동되는 위치-->
+    <a id="content2">반품환불 위치</a>
+    <a id="content3">도서정보 위치</a>
+
+    <a href="#top">맨위로</a>
+
+</body>
+</html>

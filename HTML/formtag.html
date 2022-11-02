@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- form : 작성하는방식, 선택방식 -->
+
+    <form method="" action="http://www.daum.net" name="member"> <!--action은 입력하면 해당 경로로 이동 시킨다-->
+       <fieldset>          <!--경계선 만들기-->
+        <legend>개인정보</legend> 
+        <label for="id">아이디</label>
+        <input type="text" name="id" id="id" autofocus required placeholder="하이픈 생략"/> <!--희미하게 입력-->
+        <br>
+        <label for="pwd">비밀번호</label>
+        <input type="password" name="pwd" id="pwd" size="50" maxlength="8" minlength="4"> <!--크기 및 글자수 제한 설정-->
+        <br>
+        <label for="time">상영시간</label>
+        <input type="text" name="time" id="time" value="오전:09:00 ~ 12:00" readonly> <!--수정할 수 없는 data-->
+       </fieldset>
+       <fieldset>
+        <legend>기본정보선택</legend>
+        <!-- 라디오 버튼 -->
+        <input type="radio" name="subject" value="java">JAVA
+        <input type="radio" name="subject" value="html">HTML
+        <input type="radio" name="subject" value="ORACLE">ORACLE
+        <br>
+        <input type="radio" name="grade" value="1">1학년
+        <input type="radio" name="grade" value="2">2학년
+        <input type="radio" name="grade" value="3" checked>3학년 <!--자동체크-->
+        <br>
+
+        <!--체크박스 -->
+        <input type="checkbox" name="happy" value="축구">축구
+        <input type="checkbox" name="happy" value="농구">농구
+        <input type="checkbox" name="happy" value="야구">야구
+       </fieldset>
+
+       <!-- 기타 -->
+       <label for="email">이메일</label>
+       <input type="email" name="email" id="email">
+       <br>
+       <label for="number">주문수량</label>
+       <input type="number" name="number" value="number">
+       <br>
+       <label for="color">색상</label>
+       <input type="color" name="color" id="color">
+       <br>
+       <label for="start">시작일</label>
+       <input type="datetime-local" name="date" id="date">
+       <label for="end">종료일</label>
+       <input type="date" name="date" id="date">
+       <br>
+       <label for="job">직업선택</label>
+       <select name="job" >
+        <option value="0">--선택--</option>
+        <option value="1">--기자--</option>
+        <option value="2">--개발자--</option>
+        <option value="3">--경호원--</option>
+       </select>
+       <br><br>
+       <label for="content">상품소개</label>
+       <textarea name="content" id="content" rows="7" cols="25" placeholder="상품소개" ></textarea> <!--공간을 늘릴수있음-->
+       <br><br>
+
+       <label for="fileup">첨부파일</label> <!--첨부-->
+       <input type="file" multiple>
+       <br><br>
+       <!-- 버튼 -->
+       <input type="submit" value="회원가입"> <!--data 전송-->
+       <input type="reset" value="취소"> <!--data 취소-->
+       <input type="button" value="메세지 실행" onclick="alert('메세지 보여주기')"> <!--정리한 역할만 실행-->
+       <button type="button" onclick="alert('메세지 보여주기')">메세지 실행2</button>
+        <!-- button/submit/reset -->
+        
+
+
+    </form>
+</body>
+</html>
