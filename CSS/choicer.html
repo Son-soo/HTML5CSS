@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        /* 선택자 {속성:값; 속성:값; 속성:값;} */
+
+        /*  * ←--모든 선택자 */
+        /* 태그선택자 */
+        p{font-size: 50px; color: blueviolet; }  
+        h1{font-size: 70px; color: red;} 
+        
+        /* 클래스 선택자 : 효과를 여러개 적용가능*/
+        .bluetext {color : blue;}
+        .redtext {color : red;}
+        .textsize100 {font-size: 30px;}            /* ex) <p class="textsize100"> </p>  */
+
+        /* 아이디 선택자 : 하나만 적용가능 */
+        #bluetext {color : blue;}
+        #textsize30 {font-size: 30px; color: aqua;}
+        #textsize50 {font-size: 50px;}            /* ex) <p id="textsize50"> </p>  */
+
+        /* 그룹선택자 */
+        h1,h2,span {color : green;}
+
+        /* 선택자 우선순위 : 중복될 경우 작성 순서상 마지막이 적용된다. */
+        p{color : blue !important;}   /* 최우선순위(!important;) */
+        p{color : red;} 
+
+        /* css의 상속 : 일부속성은 상속에서 제외(border속성) */
+        body {color : red;}
+    </Style>
+</head>
+<body>
+    기본 입니다.
+   <p class="bluetext textsize30">첫번째 p태그 입니다.</p>
+   <p class="redtext textsize30" >두번째 p태그 입니다.</p>
+   <p id="textsize30">세번째 p태그 입니다.</p>
+   <p id="textsize50">네번째 p태그 입니다.</p>
+   <p>다섯번째 p태그 입니다.</p>
+   <h1>h1태그 입니다.</h1> 
+   <h2>h2태그 입니다.</h2>
+   <span>span태그 입니다.</span>
+</body>
+</html>

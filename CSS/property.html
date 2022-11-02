@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 글꼴 */
+        .fontstyle {font-family: 궁서;}
+
+        /* 웹 폰트 */
+        @import url('https://fonts.googleapis.com/css2?family=Suez+One&family=Yatra+One&display=swap');
+        .fontstyle {font-family: 'Suez One', serif;
+                     font-family: 'Yatra One', cursive; }
+
+        /* 글자 크기 */
+        /* 절대 크기 : px, pt  */
+        /* 상대 크기 : em, %  */
+        p {font-size: 30px;}
+        p {font-size: 1em;}
+
+        /* 긁자 굵기 */
+        p{font-weight: bold;}
+
+        /* 글자 스타일 */
+        p{font-style: italic;}
+        p{
+            font-size:50px;
+            font-family: 돋움;
+        }
+        p{color: red;}
+        p{text-decoration: underline;} /*none,overline,line-through */
+
+        /* 글자에 그림자 효과 */
+        /*text-shadow : 가로거리 세로거리 번짐 */ 
+        .shadow1 { text-shadow : 5px 5px 3px #f00; }
+
+        /* 글자 간격 */
+        .letter {letter-spacing: 0.5em;}
+
+        P{
+            width: 150px;
+            background-color: darkgray;
+        }
+
+        /* 공백과 줄바꿈 속성 */
+        /* white-space : normal | nowrap | pre | pre-wrap | pre-line */
+        .normal{white-space: normal;}
+        .nowrap{white-space: nowrap;}
+        .pre{white-space: pre;}
+        .prewrap{white-space: pre-wrap;}
+        .preline{white-space: pre-line;}
+
+        /* 텍스트정렬 : 수평정렬 */
+        /* text-align :left | right | center | justify */
+        .left {text-align :left}
+        .right {text-align :right}
+        .center{text-align :center}
+        .justify{text-align :justify}
+
+        /* 줄(행) 간격 */
+        .line {line-height: 2em;} 
+
+        .box{
+            width: 200px;
+            height: 200px;
+            color: deeppink;
+            text-align: center;
+            line-height: 200px;
+        }
+
+        /* 글자가 넘치는 기능 제어 */
+        /* overflow */
+        p{
+            border:1px solid red;
+            width: 300px;
+            white-space:nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; /*넘치면 생략(...)*/
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- CSS의 속성 -->
+
+    기본 글자 입니다.
+    <p>브라우저 기본 글꼴</p>
+    <p class="fontstyle">글꼴을 적용한 상태 Shrikhand — Regular</p>
+    <h1 class="shadow1">HTML</h1>
+    <h1 class="letter">HTML</h1>
+
+    <p class="normal">요소의 공백문자 를 어 떻게 처리할 지를 정의합니다.</p>
+    <p class="nowrap">요소의 공백문자 를 어 떻게 처리할 지를 정의합니다.</p>
+    <p class="pre">요소의              공백문자 를 어 떻게 처리             할 지를 정의합니다.</p>
+    <p class="pre-wrap">요소            의 공백문자 를 어 떻게         처리할 지를 정의합니다.</p>
+    <p class="pre-line">요소            의 공백문자 를 어 떻게 처리할             지를 정의합니다.</p>
+
+
+
+
+</body>
+</html>
