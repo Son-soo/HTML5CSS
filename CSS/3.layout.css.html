@@ -1,0 +1,91 @@
+3. 3-layout-css
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3단 레이아웃</title>
+    <style>
+      div{
+         border: 2px solid burlywood;
+            padding: 20px;
+      }
+
+        #container{
+         width: 960px;
+         margin: 0 auto; 
+      }
+
+        #header{
+         padding: 20px;
+            margin-bottom: 20px;
+      }
+
+        #left-sidebar{
+            width: 150px;
+            float: left;
+            margin-bottom: 20px;
+            margin-right: 20px;
+        }
+
+        #contents{
+            width: 490px;
+            float: left;
+            margin-bottom: 20px;
+        }
+
+        #right-sidebar{
+            width: 150px;
+            float: right;
+            margin-bottom: 20px;
+        }
+
+
+        #footer{
+         clear: both;
+      }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+         <h1>사이트 제목</h1>
+      </div>
+        <div id="left-sidebar">
+            <h2>사이드바</h2>
+            <ul>
+                <li>항목1</li>
+                <li>항목2</li>
+                <li>항목3</li>
+                <li>항목4</li>
+            </ul>
+        </div>
+
+        <div id="contents">
+            <h2>본문</h2>
+            <p>내용 어쩌구 저쩌구 내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구
+                내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구
+                내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구내용 어쩌구 저쩌구
+            </p>
+        </div>
+ 
+        <div id="right-sidebar">
+            <h2>사이드바</h2>
+            <ul>
+                <li>항목1</li>
+                <li>항목2</li>
+                <li>항목3</li>
+                <li>항목4</li>
+            </ul>
+         </div>
+
+        <div id="footer">
+         <h2>푸터</h2>
+            <p>이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</p>
+      </div>
+    </div>
+</body>
+</html>
